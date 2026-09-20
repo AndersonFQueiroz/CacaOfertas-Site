@@ -1,0 +1,142 @@
+<style>
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&family=Poppins:wght@400;500;600;700&display=swap");
+:root{
+  --bg:#070b18; --bg2:#0b1124; --card:rgba(255,255,255,.06);
+  --stroke:rgba(255,255,255,.12); --txt:#f1f5f9; --muted:#9fb0c9;
+  --cyan:#22d3ee; --indigo:#6366f1; --tg:#229ED9; --cream:#FAF3E4;
+  --radius:20px;
+}.caca *{margin:0;padding:0;box-sizing:border-box}.caca{scroll-behavior:smooth}.caca{font-family:'Poppins',system-ui,sans-serif;background:var(--bg);color:var(--txt);overflow-x:hidden;line-height:1.6}.caca h1,.caca h2,.caca .display{font-family:'Archivo Black',sans-serif;line-height:1.12;letter-spacing:.5px}.caca /* ===== fundo aurora ===== */
+.aurora{position:fixed;inset:0;z-index:-2;overflow:hidden;background:radial-gradient(1200px 800px at 80% -10%,#101a3d 0%,var(--bg) 55%)}.caca .blob{position:absolute;border-radius:50%;filter:blur(90px);opacity:.55;will-change:transform}.caca .b1{width:480px;height:480px;background:radial-gradient(circle,#0ea5e9,transparent 70%);top:-140px;left:-120px;animation:drift1 16s ease-in-out infinite alternate}.caca .b2{width:520px;height:520px;background:radial-gradient(circle,#6366f1,transparent 70%);top:10%;right:-180px;animation:drift2 20s ease-in-out infinite alternate}.caca .b3{width:420px;height:420px;background:radial-gradient(circle,#0e7490,transparent 70%);bottom:-160px;left:30%;animation:drift1 22s ease-in-out infinite alternate-reverse}
+@keyframes drift1{to{transform:translate(70px,50px) scale(1.15)}}
+@keyframes drift2{to{transform:translate(-80px,60px) scale(1.1)}}.caca .noise{position:fixed;inset:0;z-index:-1;opacity:.05;pointer-events:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence baseFrequency='.9'/%3E%3C/filter%3E%3Crect width='120' height='120' filter='url(%23n)' opacity='.6'/%3E%3C/svg%3E")}.caca .wrap{max-width:1080px;margin:0 auto;padding:0 20px}.caca /* ===== nav vidro ===== */
+nav{position:sticky;top:12px;z-index:50;margin-top:12px}.caca .nav-in{display:flex;align-items:center;justify-content:space-between;gap:12px;background:rgba(10,15,32,.6);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border:1px solid var(--stroke);border-radius:16px;padding:10px 14px}.caca .brand{display:flex;align-items:center;gap:10px;font-weight:700}.caca .brand img{width:38px;height:38px;border-radius:50%;box-shadow:0 0 0 2px rgba(34,211,238,.6),0 0 18px rgba(34,211,238,.5)}.caca .btn{display:inline-flex;align-items:center;gap:10px;text-decoration:none;font-weight:700;border-radius:14px;transition:transform .18s ease,box-shadow .18s ease}.caca .btn-tg{background:linear-gradient(135deg,#2fb4ec,#1a7fd4);color:#fff;padding:12px 22px;box-shadow:0 8px 30px rgba(34,158,217,.45)}.caca .btn-tg:hover{transform:translateY(-2px);box-shadow:0 14px 40px rgba(34,158,217,.6)}.caca .btn-ghost{border:1px solid var(--stroke);color:var(--txt);padding:12px 22px;background:rgba(255,255,255,.04)}.caca .btn-ghost:hover{transform:translateY(-2px);background:rgba(255,255,255,.09)}.caca .btn-big{font-size:19px;padding:18px 34px;border-radius:16px;position:relative;overflow:hidden;animation:pulse 2.4s ease-in-out infinite}
+@keyframes pulse{0%,100%{box-shadow:0 8px 34px rgba(34,158,217,.5)}50%{box-shadow:0 8px 54px rgba(34,211,238,.75)}}.caca .btn-big::after{content:"";position:absolute;top:0;left:-80%;width:50%;height:100%;background:linear-gradient(100deg,transparent,rgba(255,255,255,.45),transparent);transform:skewX(-20deg);animation:shine 3.2s ease-in-out infinite}
+@keyframes shine{0%{left:-80%}55%,100%{left:130%}}.caca /* ===== hero ===== */
+.hero{display:grid;grid-template-columns:1.1fr .9fr;gap:36px;align-items:center;padding:64px 0 40px}.caca .badge{display:inline-flex;align-items:center;gap:8px;font-size:13px;font-weight:600;color:#a5f3fc;background:rgba(34,211,238,.1);border:1px solid rgba(34,211,238,.35);padding:7px 14px;border-radius:999px;margin-bottom:18px}.caca .dot{width:8px;height:8px;border-radius:50%;background:#34d399;box-shadow:0 0 10px #34d399;animation:blink 1.6s infinite}
+@keyframes blink{50%{opacity:.4}}.caca .hero h1{font-size:clamp(34px,5.4vw,58px);text-transform:uppercase}.caca .grad{background:linear-gradient(92deg,var(--cyan),#818cf8 60%,#e879f9);-webkit-background-clip:text;background-clip:text;color:transparent}.caca .hero p.sub{color:var(--muted);font-size:18px;margin:18px 0 28px;max-width:34rem}.caca .cta-row{display:flex;gap:14px;flex-wrap:wrap}.caca .chips{display:flex;gap:10px;flex-wrap:wrap;margin-top:26px}.caca .chip{font-size:13px;font-weight:600;color:#dbe7f5;background:var(--card);border:1px solid var(--stroke);padding:8px 14px;border-radius:999px;backdrop-filter:blur(8px)}.caca .chip b{color:var(--cyan)}.caca /* ===== mockup celular ===== */
+.phone-zone{position:relative;display:flex;justify-content:center}.caca .phone{width:min(300px,78vw);border-radius:40px;border:1px solid rgba(255,255,255,.2);background:linear-gradient(180deg,#111a33,#0a0f22);padding:14px;box-shadow:0 30px 80px rgba(0,0,0,.6),0 0 60px rgba(99,102,241,.25);animation:floaty 5s ease-in-out infinite}
+@keyframes floaty{50%{transform:translateY(-12px)}}.caca .notch{width:110px;height:24px;background:#05080f;border-radius:12px;margin:2px auto 12px}.caca .msg{background:rgba(255,255,255,.07);border:1px solid var(--stroke);border-radius:14px;padding:12px;margin-bottom:10px;font-size:13px}.caca .msg .off{font-weight:700;color:#fff}.caca .msg .price{color:#5eead4;font-weight:700}.caca .msg .old{color:#8ea0bb;text-decoration:line-through;font-size:12px}.caca .pill{display:inline-block;font-size:11px;font-weight:700;background:var(--cream);color:#0b1124;border-radius:999px;padding:3px 10px;margin-bottom:6px}.caca .mini{position:absolute;background:rgba(13,20,40,.85);backdrop-filter:blur(10px);border:1px solid var(--stroke);border-radius:14px;padding:10px 14px;font-size:13px;font-weight:600;box-shadow:0 16px 40px rgba(0,0,0,.5);animation:floaty 6s ease-in-out infinite}.caca .m1{top:6%;left:-4%}.caca .m2{bottom:10%;right:-3%;animation-delay:1.4s}.caca .mini span{color:#5eead4}.caca /* ===== marquee ===== */
+.marquee{border-top:1px solid var(--stroke);border-bottom:1px solid var(--stroke);overflow:hidden;white-space:nowrap;margin:26px 0 0;background:rgba(255,255,255,.02)}.caca .marquee div{display:inline-block;padding:14px 0;animation:slide 26s linear infinite;font-weight:600;color:#c4d3ea;font-size:15px}.caca .marquee b{color:var(--cyan);margin:0 18px}
+@keyframes slide{to{transform:translateX(-50%)}}.caca /* ===== seções ===== */
+section{padding:64px 0}.caca .sec-tag{font-size:13px;font-weight:700;letter-spacing:2px;color:var(--cyan);text-transform:uppercase}.caca .sec-title{font-size:clamp(26px,3.6vw,38px);margin:8px 0 8px;text-transform:uppercase}.caca .sec-sub{color:var(--muted);max-width:38rem;margin-bottom:30px}.caca .bento{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.caca .card{background:var(--card);border:1px solid var(--stroke);border-radius:var(--radius);padding:26px;backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);transition:transform .2s ease,border-color .2s ease}.caca .card:hover{transform:translateY(-5px);border-color:rgba(34,211,238,.5)}.caca .card .ico{margin-bottom:12px;color:var(--cyan)}.caca .card .ico svg{width:32px;height:32px}.caca .card h3{font-size:18px;margin-bottom:8px}.caca .card p{color:var(--muted);font-size:15px}.caca .card.wide{grid-column:span 2;background:linear-gradient(135deg,rgba(34,211,238,.14),rgba(99,102,241,.14));border-color:rgba(34,211,238,.35)}.caca /* stats */
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:8px}.caca .stat{text-align:center;padding:28px 10px}.caca .stat .num{font-family:'Archivo Black';font-size:clamp(30px,4.5vw,46px);background:linear-gradient(92deg,var(--cyan),#a5b4fc);-webkit-background-clip:text;background-clip:text;color:transparent}.caca .stat p{color:var(--muted);font-size:14px}.caca /* ofertas */
+.offers{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.caca .offer{overflow:hidden;padding:0}.caca .offer .top{padding:22px 22px 0}.caca .offer .pill{margin-bottom:10px}.caca .offer h3{font-size:17px;min-height:52px}.caca .offer .prices{display:flex;align-items:baseline;gap:10px;margin:10px 0 4px}.caca .offer .now{font-size:26px;font-weight:700;color:#5eead4}.caca .offer .was{color:#8ea0bb;text-decoration:line-through}.caca .offer a{display:block;text-align:center;margin:16px;background:rgba(34,211,238,.12);border:1px solid rgba(34,211,238,.4);color:#a5f3fc;font-weight:700;text-decoration:none;padding:13px;border-radius:12px;transition:.18s}.caca .offer a:hover{background:rgba(34,211,238,.25);transform:translateY(-2px)}.caca .offer small{display:block;color:#7d8fb0;font-size:12px;padding:0 22px 20px}.caca /* faq */
+details{background:var(--card);border:1px solid var(--stroke);border-radius:14px;padding:18px 20px;margin-bottom:12px}.caca summary{cursor:pointer;font-weight:600;font-size:16px}.caca details p{color:var(--muted);margin-top:10px;font-size:15px}.caca /* final */
+.final{text-align:center;background:linear-gradient(135deg,rgba(34,211,238,.12),rgba(99,102,241,.12));border:1px solid rgba(34,211,238,.3);border-radius:28px;padding:56px 24px;position:relative;overflow:hidden}.caca .final img{width:110px;height:110px;border-radius:50%;box-shadow:0 0 0 3px rgba(34,211,238,.6),0 0 50px rgba(34,211,238,.55);margin-bottom:18px;animation:floaty 5s ease-in-out infinite}.caca footer{text-align:center;color:#7d8fb0;font-size:13px;padding:26px 0 40px}.caca footer a{color:var(--cyan);text-decoration:none}.caca /* reveal */
+.rv{opacity:0;transform:translateY(26px);transition:opacity .6s ease,transform .6s ease}
+@media(max-width:860px){.caca .hero{grid-template-columns:1fr;padding-top:44px}.caca .bento,.caca .offers,.caca .stats{grid-template-columns:1fr}.caca .card.wide{grid-column:span 1}.caca .m1{left:0}.caca .m2{right:0}.caca .btn-big{width:100%;justify-content:center}
+}
+@media(prefers-reduced-motion:reduce){.caca *,.caca *::before,.caca *::after{animation:none!important;transition:none!important}
+}
+.caca{position:relative;background:#070b18;color:#f1f5f9;border-radius:0;padding:6px 0 30px;overflow:hidden;margin-left:calc(50% - 50vw);margin-right:calc(50% - 50vw)}body{overflow-x:hidden!important}.caca .wrap{max-width:1080px;margin:0 auto}.caca h1,.caca h2{color:#f1f5f9}.caca .aurora{position:absolute}.caca .noise{position:absolute}.caca .wrap{max-width:100%}
+body{background:#070b18!important}.caca-post,.post-outer,.post,.hentry,.post-body,.blog-posts,.content-inner{background:transparent!important;border:0!important;box-shadow:none!important}.post-title,.date-header,.post-timestamp{display:none!important}#page_body .FeaturedPost,.Blog .blog-posts .post-outer-container{background:transparent!important;border:0!important;box-shadow:none!important;padding:0!important;margin:0!important}#comments,.comments,#comment-form,.comment-form,.comment-link,.post-comment-link{display:none!important}</style>
+<div class="caca">
+
+<div class="aurora"><div class="blob b1"></div><div class="blob b2"></div><div class="blob b3"></div></div>
+<div class="noise"></div>
+
+<div class="wrap">
+<nav><div class="nav-in">
+  <div class="brand"><img src="https://andersonfqueiroz.github.io/CacaOfertas-Site/logo.png" alt="Caça Ofertas" width="38" height="38"> Caça Ofertas</div>
+  <a class="btn btn-tg" href="https://t.me/+Thvqq4xZFjFjYmMx">Entrar grátis
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M21.9 4.6 2.7 12.1c-.8.3-.8 1.4.1 1.6l4.6 1.4 1.8 5.6c.3.8 1.3.9 1.8.2l2.6-3.1 4.9 3.6c.6.4 1.5.1 1.7-.6l3-14.1c.2-.9-.6-1.6-1.3-1.1zM8.5 13.1l9.7-6.6-6.1 9.2-1.1-2.1-2.5-.5z"/></svg>
+  </a>
+</div></nav>
+
+<header class="hero">
+  <div>
+    <span class="badge"><span class="dot"></span> VAGAS ABERTAS • 100% GRÁTIS • SEM SPAM</span>
+    <h1>Pare de pagar <span class="grad">caro.</span><br>Receba achadinhos todo dia.</h1>
+    <p class="sub">Caçamos <strong>todos os dias</strong> os melhores preços da <strong>Shopee</strong> e do <strong>Mercado Livre</strong> e entregamos direto no seu Telegram. Você só clica e economiza.</p>
+    <div class="cta-row">
+      <a class="btn btn-tg btn-big" href="https://t.me/+Thvqq4xZFjFjYmMx">Quero entrar no canal
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M21.9 4.6 2.7 12.1c-.8.3-.8 1.4.1 1.6l4.6 1.4 1.8 5.6c.3.8 1.3.9 1.8.2l2.6-3.1 4.9 3.6c.6.4 1.5.1 1.7-.6l3-14.1c.2-.9-.6-1.6-1.3-1.1zM8.5 13.1l9.7-6.6-6.1 9.2-1.1-2.1-2.5-.5z"/></svg>
+      </a>
+      <a class="btn btn-ghost" href="#como">Ver como funciona</a>
+    </div>
+    <div class="chips">
+      <span class="chip">Ofertas todo dia</span>
+      <span class="chip">Shopee + Mercado Livre</span>
+      <span class="chip">Zero spam</span>
+      <span class="chip">Sempre grátis</span>
+    </div>
+  </div>
+  <div class="phone-zone">
+    <div class="mini m1"><span>-41%</span> hoje</div>
+    <div class="mini m2">a partir de <span>R$ 20</span></div>
+    <div class="phone">
+      <div class="notch"></div>
+      <div class="msg"><span class="pill">-41% HOJE</span><div class="off">Achadinho de casa</div><div><span class="price">R$ 99,90</span> <span class="old">R$ 169,90</span></div></div>
+      <div class="msg"><span class="pill">-35% HOJE</span><div class="off">Moda com desconto</div><div><span class="price">R$ 79,90</span> <span class="old">R$ 122,90</span></div></div>
+      <div class="msg"><span class="pill">QUEDA DE PREÇO</span><div class="off">Eletrônico em oferta</div><div><span class="price">R$ 149,90</span> <span class="old">R$ 229,90</span></div></div>
+      <div class="msg"><strong>Viu, clicou, levou.</strong><br>Preço pode mudar a qualquer momento.</div>
+    </div>
+  </div>
+</header>
+</div>
+
+<div class="marquee"><div>Casa <b>✦</b> Cozinha <b>✦</b> Moda <b>✦</b> Beleza <b>✦</b> Eletrônicos <b>✦</b> Achadinhos <b>✦</b> Shopee <b>✦</b> Mercado Livre <b>✦</b> Casa <b>✦</b> Cozinha <b>✦</b> Moda <b>✦</b> Beleza <b>✦</b> Eletrônicos <b>✦</b> Achadinhos <b>✦</b> Shopee <b>✦</b> Mercado Livre <b>✦</b></div></div>
+
+<div class="wrap">
+<section id="como">
+  <div class="sec-tag">Como funciona</div>
+  <h2 class="sec-title">Do post ao desconto em 3 toques</h2>
+  <p class="sec-sub">Sem app novo, sem cadastro, sem pegadinha. Se você usa Telegram, já está dentro.</p>
+  <div class="bento">
+    <div class="card"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 2 11 13"/><path d="M22 2 15 22l-4-9-9-4z"/></svg></div><h3>1. Entre no canal</h3><p>Um toque no botão e você já recebe tudo. Grátis pra sempre, saia quando quiser.</p></div>
+    <div class="card"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8a6 6 0 0 0-12 0c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.7 21a2 2 0 0 1-3.4 0"/></svg></div><h3>2. Receba todo dia</h3><p>Achadinhos da Shopee e Mercado Livre com preço baixo de verdade ao longo do dia.</p></div>
+    <div class="card"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.6 13.4 11 3.8A2 2 0 0 0 9.6 3H4v5.6c0 .5.2 1 .6 1.4l9.6 9.6a2 2 0 0 0 2.8-2.8z"/><circle cx="8" cy="7" r="1.2"/></svg></div><h3>3. Clique e economize</h3><p>Viu, clicou, levou. O link te leva direto à oferta antes que o preço suba.</p></div>
+    <div class="card wide"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-3.6 8-10V5l-8-3-8 3v7c0 6.4 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg></div><h3>Seleção de verdade, sem spam</h3><p>Só entra no canal o que vale a pena: desconto real e loja confiável. Nada de flood inútil lotando seu celular — diferente daqueles grupos que mandam 200 mensagens por hora.</p></div>
+    <div class="card"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 3 14h7l-1 8 10-12h-7l1-8z"/></svg></div><h3>Alerta de queda</h3><p>Quando um preço despenca, avisamos na hora. Quem chega primeiro paga menos.</p></div>
+  </div>
+</section>
+
+<section>
+  <div class="sec-tag">Por que entrar</div>
+  <h2 class="sec-title">Feito pra quem odeia pagar caro</h2>
+  <div class="stats">
+    <div class="stat card"><div class="num">+500</div><p>ofertas monitoradas todo dia</p></div>
+    <div class="stat card"><div class="num">100</div><p>% grátis, sem pegadinha</p></div>
+    <div class="stat card"><div class="num">0</div><p>spam no seu celular</p></div>
+  </div>
+</section>
+
+<section>
+  <div class="sec-tag">Prévia real</div>
+  <h2 class="sec-title">O tipo de oferta que cai no canal</h2>
+  <p class="sec-sub">Exemplos do formato que postamos. As ofertas do dia estão dentro do canal.</p>
+  <div class="offers">
+    <div class="card offer"><div class="top"><span class="pill">-41% • CASA</span><h3>Achadinho pra casa que vive esgotando</h3><div class="prices"><span class="now">R$ 99,90</span><span class="was">R$ 169,90</span></div></div><a href="https://t.me/+Thvqq4xZFjFjYmMx">Ver oferta de hoje</a><small>Shopee • preço sujeito a alteração</small></div>
+    <div class="card offer"><div class="top"><span class="pill">-35% • MODA</span><h3>Peça de moda com desconto raro</h3><div class="prices"><span class="now">R$ 79,90</span><span class="was">R$ 122,90</span></div></div><a href="https://t.me/+Thvqq4xZFjFjYmMx">Ver oferta de hoje</a><small>Mercado Livre • preço sujeito a alteração</small></div>
+    <div class="card offer"><div class="top"><span class="pill">QUEDA • TECH</span><h3>Eletrônico que caiu de preço</h3><div class="prices"><span class="now">R$ 149,90</span><span class="was">R$ 229,90</span></div></div><a href="https://t.me/+Thvqq4xZFjFjYmMx">Ver oferta de hoje</a><small>Shopee • preço sujeito a alteração</small></div>
+  </div>
+</section>
+
+<section>
+  <div class="sec-tag">Dúvidas</div>
+  <h2 class="sec-title">Perguntas frequentes</h2>
+  <div style="margin-top:22px">
+    <details class="rv"><summary>É grátis mesmo?</summary><p>Sim, 100% grátis. Entrar no canal não custa nada e nunca vai custar. Ganhamos comissão das lojas quando você compra pelo link, sem aumentar seu preço.</p></details>
+    <details class="rv"><summary>Vou receber spam?</summary><p>Não. Postamos uma seleção diária de ofertas reais. Sem corrente, sem golpe, sem mensagem no seu privado.</p></details>
+    <details class="rv"><summary>Preciso instalar alguma coisa?</summary><p>Só o Telegram, que você provavelmente já tem. Um toque no botão e pronto.</p></details>
+    <details class="rv"><summary>As ofertas são da Shopee e Mercado Livre mesmo?</summary><p>Sim, só lojas confiáveis das duas plataformas, com link direto e preço conferido no dia.</p></details>
+    <details class="rv"><summary>E se o preço mudou?</summary><p>Oferta relâmpago acaba rápido e preço pode mudar. Por isso avisamos cedo: quem vê primeiro, paga menos.</p></details>
+  </div>
+</section>
+
+<section>
+  <div class="final">
+    <img src="https://andersonfqueiroz.github.io/CacaOfertas-Site/logo.png" alt="Caça Ofertas" width="110" height="110">
+    <h2 class="sec-title">Sua próxima economia está a 1 toque</h2>
+    <p class="sec-sub" style="margin:10px auto 26px;text-align:center">Entre agora e receba os achadinhos de hoje. Leva 5 segundos.</p>
+    <a class="btn btn-tg btn-big" href="https://t.me/+Thvqq4xZFjFjYmMx">Entrar no canal grátis
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M21.9 4.6 2.7 12.1c-.8.3-.8 1.4.1 1.6l4.6 1.4 1.8 5.6c.3.8 1.3.9 1.8.2l2.6-3.1 4.9 3.6c.6.4 1.5.1 1.7-.6l3-14.1c.2-.9-.6-1.6-1.3-1.1zM8.5 13.1l9.7-6.6-6.1 9.2-1.1-2.1-2.5-.5z"/></svg>
+    </a>
+  </div>
+</section>
+</div>
+
+<footer>Canal público: <a href="https://t.me/cacaofertasofcBR">t.me/cacaofertasofcBR</a> • Ofertas, achadinhos, preço baixo — Shopee + Mercado Livre<br>© 2026 Caça Ofertas</footer>
+
+
+</div>
