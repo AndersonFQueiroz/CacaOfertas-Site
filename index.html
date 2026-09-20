@@ -18,6 +18,7 @@
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"WebPage","name":"Caça Ofertas — Achadinhos Shopee + Mercado Livre","description":"Canal grátis no Telegram com ofertas da Shopee e Mercado Livre todo dia."}
 </script>
+<noscript><style>.rv{opacity:1!important;transform:none!important}</style></noscript>
 <style>
 :root{
   --bg:#070b18; --bg2:#0b1124; --card:rgba(255,255,255,.06);
@@ -202,7 +203,7 @@ footer a{color:var(--cyan);text-decoration:none}
   <div class="sec-tag rv">Por que entrar</div>
   <h2 class="sec-title rv">Feito pra quem odeia pagar caro</h2>
   <div class="stats">
-    <div class="stat card rv"><div class="num" data-count="500" data-prefix="+">0</div><p>ofertas monitoradas todo dia</p></div>
+    <div class="stat card rv"><div class="num" data-count="500" data-prefix="+">+500</div><p>ofertas monitoradas todo dia</p></div>
     <div class="stat card rv"><div class="num" data-count="100">0</div><p>% grátis, sem pegadinha</p></div>
     <div class="stat card rv"><div class="num" data-count="0">0</div><p>spam no seu celular</p></div>
   </div>
@@ -257,6 +258,7 @@ footer a{color:var(--cyan);text-decoration:none}
   var nums = document.querySelectorAll('.num[data-count]');
   function count(el){
     var target = parseInt(el.getAttribute('data-count'),10), pre = el.getAttribute('data-prefix')||'', t0 = null, dur = 1200;
+    el.textContent = pre+'0';
     if(reduce){ el.textContent = pre+target; return; }
     function step(t){ if(!t0) t0 = t; var p = Math.min((t-t0)/dur,1); el.textContent = pre+Math.round(target*(1-Math.pow(1-p,3))); if(p<1) requestAnimationFrame(step); }
     requestAnimationFrame(step);
